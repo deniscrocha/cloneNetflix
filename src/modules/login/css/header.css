@@ -1,0 +1,12 @@
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  & img{
+    max-height: 5.5vh;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}

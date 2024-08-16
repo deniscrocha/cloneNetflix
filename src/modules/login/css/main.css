@@ -1,0 +1,21 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  gap: 1vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.BackgroundImage{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
