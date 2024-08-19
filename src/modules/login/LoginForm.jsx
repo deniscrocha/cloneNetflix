@@ -1,6 +1,12 @@
 import "./css/login.css";
+import { useNavigate } from "react-router-dom";
 
-export default function LoginForm(){
+export default function LoginForm({status}){
+  const navigate = useNavigate();
+  const handleLogin = () =>{
+    status.setLoginStatus(true);
+    navigate("/profile");
+  }
   return(
     <form>
       <div>
@@ -14,7 +20,9 @@ export default function LoginForm(){
         <p>Senha</p>
         <input type="text"/>
       </div>
-      <button type="button" className="EnterButton">Entrar</button>
+      <button type="button"
+        onClick={handleLogin}
+        className="EnterButton">Entrar</button>
       <p>OU</p>
       <button type="button" className="CodeButton">Usar um código de acesso</button>
       <a>Esqueceu a senha?</a>
