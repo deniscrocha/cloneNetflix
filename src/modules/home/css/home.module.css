@@ -1,5 +1,76 @@
-.container{
+.container {
   height: 150vh;
   color: white;
-  background: grey;
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vh;
+  height: 14.7vh;
+
+  & h3 {
+    font-size: 1.4vw;
+    margin-left: 5vh;
+  }
+
+  & div {
+    position: relative;
+  background: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+  }
+
+  position: relative;
+}
+
+.rightArrowContainer {
+  position: absolute;
+  width: 3%;
+  right: 0;
+  top: 0;
+  border-radius: 0px 5px 5px 0px;
+  background: hsla(0, 0%, 8%, 0.5);
+  cursor: pointer;
+}
+
+.leftArrowContainer {
+  position: absolute;
+  width: 3%;
+  border-radius: 0px 5px 5px 0px;
+  background: hsla(0, 0%, 8%, 0.5);
+  cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  transform: rotate(180deg);
+  height: 3.5vh;
+  &:hover {
+    cursor: pointer;
+    height: 4.5vh;
+  }
+}
+
+.rightArrow {
+  position: absolute;
+  height: 3.5vh;
+  right: 5px;
+  top: 15px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+
+  &:hover {
+    cursor: pointer;
+    height: 4.5vh;
+  }
 }

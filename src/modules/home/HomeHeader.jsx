@@ -14,6 +14,7 @@ export default function HomeHeader() {
   }, []);
   return (
     <div id="header" className={css.container} style={{backgroundColor}}>
+      <div>
       <img src="../../../public/netflixHeader.svg" className="netflixLogo" />
       <ul className="pages">
         <li>Início</li>
@@ -21,10 +22,13 @@ export default function HomeHeader() {
         <li>Filmes</li>
         <li>Minha Lista</li>
       </ul>
-      <img className="search" />
-      <img className="notification" />
-      <img src="../../../public/profileImage.jpg" className="profile" />
-      <img className="profileArrow" />
+      </div>
+      <div>
+        <img src="../../../public/search.png" className={css.icon} />
+        <img src="../../../public/notification.png" className={css.icon} />
+        <img src="../../../public/profileImage.jpg" className="profile" />
+        <img src="../../../public/caret.png" className={css.caret} />
+      </div>
     </div>
   );
 }

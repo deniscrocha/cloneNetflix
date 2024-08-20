@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vh;
+  & div{
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.3vh;
+  }
+  & ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+  }
+  & p{
+    font-size: 13px;
+    color: grey;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  & button{
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+    font-size: 1.2vw;
+    padding: .5em;
+    &:hover{
+      border: 1px solid white;
+      color: white;
+    }
+  }
+}
+.icon{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  height: 3vh;
+}
