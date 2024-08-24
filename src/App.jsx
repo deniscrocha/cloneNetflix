@@ -6,6 +6,7 @@ import {
 import Login from "./modules/login/Login";
 import { useState } from "react";
 import LoginContext from "./contexts/LoginContext";
+import MovieSearch from "./modules/movies/MovieSearch";
 import Home from "./modules/home/Home";
 import Profile from "./modules/profile/Profile";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" Component={loginStatus ? Home : Login} />
             <Route path="/Login" Component={Login} />
             <Route path="/Profile" Component={loginStatus ? Profile : Login} />
+            <Route path="/Search" Component={loginStatus ? MovieSearch : Login} />
           </Routes>
         </Router>
       </LoginContext.Provider>

@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  top: 10vh;
+  position: relative;
+  flex-direction: column;
+  width: 80%;
+  background: rgba(24, 24, 24);
+  color: white;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.outterContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.img {
+  position: relative;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+}
+
+.divTitle {
+  margin-top: -15vh;
+  margin-left: 15vh;
+  position: relative;
+  z-index: 999;
+
+  & h1 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+  }
+
+}
+
+.exitButton {
+  height: 5vh;
+  width: 5vh;
+  background: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 5vh;
+  right: 1.5vw;
+  z-index: 2;
+}
+
+.buttonWatch {
+  background: rgba(255, 255, 255, 0.95);
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: 20vh;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.25rem;
+}
+
+.desc{
+  margin-top: 10vh;
+  margin-left: 15vh;
+  margin-bottom: 10vh;
+}

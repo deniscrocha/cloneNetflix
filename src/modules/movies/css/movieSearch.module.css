@@ -1,0 +1,41 @@
+.Container{
+  background: rgba(24, 24, 24);
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.SearchRow{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw;
+  gap: 1vw;
+}
+.MovieSearched{
+  display: flex;
+  background: black;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 18vw;
+  justify-content: center;
+  border-radius: 3px;
+  padding-bottom: 5vh;
+  & p{
+    width: 100%;
+    text-align: center;
+  }
+}
+.MovieImage{
+  width: 100%;
+  border-radius: 3px;
+}
+.HeaderContainer{
+  background: black;
+  height: 10vh;
+  width: 100%;
+}

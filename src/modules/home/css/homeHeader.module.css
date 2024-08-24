@@ -1,4 +1,4 @@
-.container{
+.container {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,20 +10,32 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  & ul{
+
+  & ul {
     display: flex;
     flex-direction: row;
     gap: 3vh;
     list-style-type: none;
-    & li{
+
+    & li {
       text-decoration: none;
       font-size: 0.8rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
-  & img{
+
+  & img {
     max-height: 3.5vh;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
-  & div{
+
+  & div {
     margin-left: 5vh;
     margin-right: 5vh;
     display: flex;
@@ -33,16 +45,27 @@
     gap: 2vh;
   }
 }
-.icon{
+
+.icon {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
-.caret{
+
+.caret {
   -webkit-filter: invert(1);
   filter: invert(1);
   height: 3vh;
-  &:hover{
+
+  &:hover {
     transform: rotate(180deg);
     cursor: pointer;
   }
+}
+.searchContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1vh;
+  border-radius: 3px;
 }
